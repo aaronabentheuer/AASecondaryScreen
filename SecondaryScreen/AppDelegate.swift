@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SecondaryScreen
+//  SecondScreen
 //
 //  Created by Julian Abentheuer on 10.11.14.
 //  Copyright (c) 2014 Aaron Abentheuer. All rights reserved.
@@ -10,37 +10,63 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    var secondaryWindow: UIWindow?
+    
+    var primaryViewController : PrimaryViewController = PrimaryViewController(nibName: "PrimaryViewController", bundle: nil)
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //Subscribing to a UIScreenDidConnect/DisconnectNotification to react to changes in the status of connected screens.
+        var screenConnectionStatusChangedNotificationCenter = NSNotificationCenter.defaultCenter()
+        screenConnectionStatusChangedNotificationCenter.addObserver(self, selector:("screenConnectionStatusChanged"), name:UIScreenDidConnectNotification, object:nil)
+        screenConnectionStatusChangedNotificationCenter.addObserver(self, selector:("screenConnectionStatusChanged"), name:UIScreenDidDisconnectNotification, object:nil)
+        
+        //Initial check on how many screens are connected to the device on launch of the application.
+        if (UIScreen.screens().count > 1) {
+            self.screenConnectionStatusChanged()
+        }
+        
         return true
     }
-
+    
+    //Managing connection and disconnection of screens.
+    func screenConnectionStatusChanged () {
+        if (UIScreen.screens().count == 1) {
+            secondaryWindow!.rootViewController = nil
+            
+        }   else {
+            var screens : Array = UIScreen.screens()
+            var newScreen : AnyObject! = screens.last
+            
+            secondaryScreenSetup(newScreen as UIScreen)
+            secondaryWindow!.rootViewController = SecondaryViewController(nibName: "SecondaryViewController", bundle: nil)
+            secondaryWindow!.makeKeyAndVisible()
+        }
+    }
+    
+    //Setup of secondary screen.
+    func secondaryScreenSetup (screen : UIScreen) {
+        var newWindow : UIWindow = UIWindow(frame: screen.bounds)
+        newWindow.screen = screen
+        newWindow.hidden = false
+        
+        secondaryWindow = newWindow
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
-
+    
     func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
-
+    
     func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
-
+    
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
-
+    
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-

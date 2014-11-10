@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <scenes>
+        <!--Primary View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PrimaryViewController" id="BYZ-38-t0r" customClass="PrimaryViewController" customModule="SecondScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnr-I5-cWt">
+                                <rect key="frame" x="279" y="559" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-cB-OQf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qnr-I5-cWt" secondAttribute="bottom" constant="20" id="B4e-yM-5dm"/>
+                            <constraint firstAttribute="centerY" secondItem="b9C-cB-OQf" secondAttribute="centerY" id="LPq-Kx-c31"/>
+                            <constraint firstAttribute="trailing" secondItem="b9C-cB-OQf" secondAttribute="trailing" id="Ndw-Gp-hkE"/>
+                            <constraint firstAttribute="centerX" secondItem="qnr-I5-cWt" secondAttribute="centerX" id="RIU-d4-2Ka"/>
+                            <constraint firstItem="b9C-cB-OQf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oA4-DQ-Q8y"/>
+                            <constraint firstItem="b9C-cB-OQf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ql9-Km-KuK"/>
+                            <constraint firstAttribute="centerX" secondItem="b9C-cB-OQf" secondAttribute="centerX" id="xuC-eI-Bwr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="b9C-cB-OQf" id="EZE-2p-Wbb"/>
+                        <outlet property="screenInformation" destination="qnr-I5-cWt" id="PuT-TQ-ULf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

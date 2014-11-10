@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8021B9F11A1166DB002FC19D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021B9F01A1166DB002FC19D /* AppDelegate.swift */; };
-		8021B9F31A1166DB002FC19D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021B9F21A1166DB002FC19D /* ViewController.swift */; };
-		8021B9F61A1166DB002FC19D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8021B9F41A1166DB002FC19D /* Main.storyboard */; };
-		8021B9F81A1166DB002FC19D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8021B9F71A1166DB002FC19D /* Images.xcassets */; };
+		8021B9F31A1166DB002FC19D /* PrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021B9F21A1166DB002FC19D /* PrimaryViewController.swift */; };
 		8021B9FB1A1166DB002FC19D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8021B9F91A1166DB002FC19D /* LaunchScreen.xib */; };
 		8021BA071A1166DB002FC19D /* SecondaryScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021BA061A1166DB002FC19D /* SecondaryScreenTests.swift */; };
+		8021BA121A11671B002FC19D /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021BA101A11671B002FC19D /* SecondaryViewController.swift */; };
+		8021BA131A11671B002FC19D /* SecondaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA111A11671B002FC19D /* SecondaryViewController.xib */; };
+		8021BA151A11673C002FC19D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA141A11673C002FC19D /* Main.storyboard */; };
+		8021BA171A11674D002FC19D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA161A11674D002FC19D /* Info.plist */; };
+		8021BA191A11675E002FC19D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA181A11675E002FC19D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +30,17 @@
 
 /* Begin PBXFileReference section */
 		8021B9EB1A1166DB002FC19D /* SecondaryScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondaryScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8021B9EF1A1166DB002FC19D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8021B9F01A1166DB002FC19D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8021B9F21A1166DB002FC19D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8021B9F51A1166DB002FC19D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8021B9F71A1166DB002FC19D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8021B9F21A1166DB002FC19D /* PrimaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryViewController.swift; sourceTree = "<group>"; };
 		8021B9FA1A1166DB002FC19D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8021BA001A1166DB002FC19D /* SecondaryScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondaryScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8021BA051A1166DB002FC19D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8021BA061A1166DB002FC19D /* SecondaryScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryScreenTests.swift; sourceTree = "<group>"; };
+		8021BA101A11671B002FC19D /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		8021BA111A11671B002FC19D /* SecondaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondaryViewController.xib; sourceTree = "<group>"; };
+		8021BA141A11673C002FC19D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8021BA161A11674D002FC19D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8021BA181A11675E002FC19D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				8021B9F01A1166DB002FC19D /* AppDelegate.swift */,
-				8021B9F21A1166DB002FC19D /* ViewController.swift */,
-				8021B9F41A1166DB002FC19D /* Main.storyboard */,
-				8021B9F71A1166DB002FC19D /* Images.xcassets */,
-				8021B9F91A1166DB002FC19D /* LaunchScreen.xib */,
+				8021B9F21A1166DB002FC19D /* PrimaryViewController.swift */,
+				8021BA101A11671B002FC19D /* SecondaryViewController.swift */,
+				8021BA181A11675E002FC19D /* Images.xcassets */,
 				8021B9EE1A1166DB002FC19D /* Supporting Files */,
 			);
 			path = SecondaryScreen;
@@ -90,7 +94,10 @@
 		8021B9EE1A1166DB002FC19D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8021B9EF1A1166DB002FC19D /* Info.plist */,
+				8021B9F91A1166DB002FC19D /* LaunchScreen.xib */,
+				8021BA141A11673C002FC19D /* Main.storyboard */,
+				8021BA111A11671B002FC19D /* SecondaryViewController.xib */,
+				8021BA161A11674D002FC19D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,9 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8021B9F61A1166DB002FC19D /* Main.storyboard in Resources */,
 				8021B9FB1A1166DB002FC19D /* LaunchScreen.xib in Resources */,
-				8021B9F81A1166DB002FC19D /* Images.xcassets in Resources */,
+				8021BA191A11675E002FC19D /* Images.xcassets in Resources */,
+				8021BA131A11671B002FC19D /* SecondaryViewController.xib in Resources */,
+				8021BA171A11674D002FC19D /* Info.plist in Resources */,
+				8021BA151A11673C002FC19D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8021B9F31A1166DB002FC19D /* ViewController.swift in Sources */,
+				8021B9F31A1166DB002FC19D /* PrimaryViewController.swift in Sources */,
 				8021B9F11A1166DB002FC19D /* AppDelegate.swift in Sources */,
+				8021BA121A11671B002FC19D /* SecondaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +246,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8021B9F41A1166DB002FC19D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8021B9F51A1166DB002FC19D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8021B9F91A1166DB002FC19D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
