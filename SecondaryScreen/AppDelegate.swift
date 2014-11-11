@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //Subscribing to a UIScreenDidConnect/DisconnectNotification to react to changes in the status of connected screens.
-        var screenConnectionStatusChangedNotificationCenter = NSNotificationCenter.defaultCenter()
-        screenConnectionStatusChangedNotificationCenter.addObserver(self, selector:("screenConnectionStatusChanged"), name:UIScreenDidConnectNotification, object:nil)
-        screenConnectionStatusChangedNotificationCenter.addObserver(self, selector:("screenConnectionStatusChanged"), name:UIScreenDidDisconnectNotification, object:nil)
+        var screenConnectionStatusChangedNotification = NSNotificationCenter.defaultCenter()
+        screenConnectionStatusChangedNotification.addObserver(self, selector:("screenConnectionStatusChanged"), name:UIScreenDidConnectNotification, object:nil)
+        screenConnectionStatusChangedNotification.addObserver(self, selector:("screenConnectionStatusChanged"), name:UIScreenDidDisconnectNotification, object:nil)
         
         //Initial check on how many screens are connected to the device on launch of the application.
         if (UIScreen.screens().count > 1) {
@@ -44,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             secondaryWindow!.rootViewController = SecondaryViewController(nibName: "SecondaryViewController", bundle: nil)
             secondaryWindow!.makeKeyAndVisible()
         }
+        
     }
     
     //Setup of secondary screen.
@@ -63,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillEnterForeground(application: UIApplication) {
     }
-    
+        
     func applicationDidBecomeActive(application: UIApplication) {
     }
     

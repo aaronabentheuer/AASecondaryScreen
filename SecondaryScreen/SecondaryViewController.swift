@@ -14,14 +14,13 @@ class SecondaryViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor()
         
-        //Adding the exemplatory view to the view. If you do your own stuff delete this line so it won't interfere with your code.
+        //Adding the exemplatory view to the canvas. If you do your own stuff delete this line so it won't interfere with your code.
         self.view.addSubview(showcaseView())
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
     
     func showcaseView () -> UIView {
         
@@ -31,11 +30,12 @@ class SecondaryViewController: UIViewController {
         
         var fadeInOutAnimation : CABasicAnimation = CABasicAnimation(keyPath: "opacity")
         fadeInOutAnimation.fromValue = 1
-        fadeInOutAnimation.toValue = 0.1
+        fadeInOutAnimation.toValue = 0.25
         fadeInOutAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         fadeInOutAnimation.duration = 1
         fadeInOutAnimation.autoreverses = true
         fadeInOutAnimation.repeatCount = HUGE
+        fadeInOutAnimation.removedOnCompletion = false
         fadeInOutAnimation.fillMode = kCAFillModeBoth
         
         var canvasView : UIView = UIView(frame: mirroredScreenResolution)
