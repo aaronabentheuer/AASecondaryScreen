@@ -15,7 +15,8 @@
 		8021BA131A11671B002FC19D /* SecondaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA111A11671B002FC19D /* SecondaryViewController.xib */; };
 		8021BA151A11673C002FC19D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA141A11673C002FC19D /* Main.storyboard */; };
 		8021BA171A11674D002FC19D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA161A11674D002FC19D /* Info.plist */; };
-		8021BA191A11675E002FC19D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA181A11675E002FC19D /* Images.xcassets */; };
+		80259A3F1A23C16400C2CA83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80259A3E1A23C16400C2CA83 /* Images.xcassets */; };
+		80259A411A23C8C400C2CA83 /* ConnectionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80259A401A23C8C400C2CA83 /* ConnectionIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,8 @@
 		8021BA111A11671B002FC19D /* SecondaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondaryViewController.xib; sourceTree = "<group>"; };
 		8021BA141A11673C002FC19D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8021BA161A11674D002FC19D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8021BA181A11675E002FC19D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80259A3E1A23C16400C2CA83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80259A401A23C8C400C2CA83 /* ConnectionIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +86,9 @@
 			children = (
 				8021B9F01A1166DB002FC19D /* AppDelegate.swift */,
 				8021B9F21A1166DB002FC19D /* PrimaryViewController.swift */,
+				80259A401A23C8C400C2CA83 /* ConnectionIndicator.swift */,
 				8021BA101A11671B002FC19D /* SecondaryViewController.swift */,
-				8021BA181A11675E002FC19D /* Images.xcassets */,
+				80259A3E1A23C16400C2CA83 /* Images.xcassets */,
 				8021B9EE1A1166DB002FC19D /* Supporting Files */,
 			);
 			path = SecondaryScreen;
@@ -201,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8021B9FB1A1166DB002FC19D /* LaunchScreen.xib in Resources */,
-				8021BA191A11675E002FC19D /* Images.xcassets in Resources */,
+				80259A3F1A23C16400C2CA83 /* Images.xcassets in Resources */,
 				8021BA131A11671B002FC19D /* SecondaryViewController.xib in Resources */,
 				8021BA171A11674D002FC19D /* Info.plist in Resources */,
 				8021BA151A11673C002FC19D /* Main.storyboard in Resources */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8021B9F31A1166DB002FC19D /* PrimaryViewController.swift in Sources */,
+				80259A411A23C8C400C2CA83 /* ConnectionIndicator.swift in Sources */,
 				8021B9F11A1166DB002FC19D /* AppDelegate.swift in Sources */,
 				8021BA121A11671B002FC19D /* SecondaryViewController.swift in Sources */,
 			);

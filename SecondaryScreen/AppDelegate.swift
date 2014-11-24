@@ -13,9 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var secondaryWindow: UIWindow?
-    
-    var primaryViewController : PrimaryViewController = PrimaryViewController(nibName: "PrimaryViewController", bundle: nil)
-    
+        
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //Subscribing to a UIScreenDidConnect/DisconnectNotification to react to changes in the status of connected screens.
@@ -47,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    //Setup of secondary screen.
+    //Here we set up the secondary screen.
     func secondaryScreenSetup (screen : UIScreen) {
         var newWindow : UIWindow = UIWindow(frame: screen.bounds)
         newWindow.screen = screen
