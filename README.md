@@ -1,6 +1,6 @@
 SecondaryScreen
 ===============
-A sensible implementation of (AirPlay) Mirroring in iOS using Swift.
+An approachable implementation of AirPlay-Mirroring using Swift in iOS.
 
 ###Introduction
 This is a small part of a much bigger project I (together with [Sarah Mautsch](https://github.com/sarahmautsch) and [Christoph Labacher](https://github.com/christophlabacher), supported by our lecturer [Roger Walk](http://www.uvwxyz.com/start.html)) built in the course "Interactive Communications Systems" at [Hochschule für Gestaltung Schwäbisch Gmünd](http://hfg-gmuend.de). We wanted to make an interactive exhibit for a museum that visitors could also take home with them after the visit and decided to go with an iOS App + AirPlay Mirroring, which can be used both as a big-screen projection in the museum as well as on the TV at home. The full project will be published here shortly. Stay tuned!
