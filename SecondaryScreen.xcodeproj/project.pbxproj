@@ -63,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8019CCA51A23F387001EA263 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				80259A401A23C8C400C2CA83 /* ConnectionIndicator.swift */,
+			);
+			name = HelperViews;
+			sourceTree = "<group>";
+		};
 		8021B9E21A1166DB002FC19D = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +94,8 @@
 			children = (
 				8021B9F01A1166DB002FC19D /* AppDelegate.swift */,
 				8021B9F21A1166DB002FC19D /* PrimaryViewController.swift */,
-				80259A401A23C8C400C2CA83 /* ConnectionIndicator.swift */,
 				8021BA101A11671B002FC19D /* SecondaryViewController.swift */,
+				8019CCA51A23F387001EA263 /* HelperViews */,
 				80259A3E1A23C16400C2CA83 /* Images.xcassets */,
 				8021B9EE1A1166DB002FC19D /* Supporting Files */,
 			);
