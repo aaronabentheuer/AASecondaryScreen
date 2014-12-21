@@ -10,7 +10,7 @@ import UIKit
 
 class SecondaryViewController: UIViewController {
     
-    var mirroredScreenResolution : CGRect?
+    private var mirroredScreenResolution : CGRect?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,10 @@ class SecondaryViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
+    //MARK: EXEMPLATORY VIEW GENERATION
     //This is just the exemplatory view to demonstrate some basic things on the secondary screen and help you with testing your Apple-TV settings. Feel free to delete all of this whole method, as it just returns a UIView, which is instantiated in the viewDidLoad() method.
-    func showcaseView () -> UIView {
+    private func showcaseView () -> UIView {
         
         var showcaseView : UIView = UIView(frame: self.view.frame)
         
