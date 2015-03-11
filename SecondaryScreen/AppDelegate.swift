@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var screens : Array = UIScreen.screens()
             var newScreen : AnyObject! = screens.last
             
-            secondaryScreenSetup(newScreen as UIScreen)
+            secondaryScreenSetup(newScreen as! UIScreen)
             secondaryWindow!.rootViewController = SecondaryViewController(nibName: "SecondaryViewController", bundle: nil)
             secondaryWindow!.makeKeyAndVisible()
         }

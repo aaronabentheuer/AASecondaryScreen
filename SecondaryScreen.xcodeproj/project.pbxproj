@@ -14,7 +14,6 @@
 		8021BA121A11671B002FC19D /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021BA101A11671B002FC19D /* SecondaryViewController.swift */; };
 		8021BA131A11671B002FC19D /* SecondaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA111A11671B002FC19D /* SecondaryViewController.xib */; };
 		8021BA151A11673C002FC19D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA141A11673C002FC19D /* Main.storyboard */; };
-		8021BA171A11674D002FC19D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8021BA161A11674D002FC19D /* Info.plist */; };
 		80259A3F1A23C16400C2CA83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80259A3E1A23C16400C2CA83 /* Images.xcassets */; };
 		80259A411A23C8C400C2CA83 /* ConnectionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80259A401A23C8C400C2CA83 /* ConnectionIndicator.swift */; };
 /* End PBXBuildFile section */
@@ -174,7 +173,7 @@
 		8021B9E31A1166DB002FC19D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Aaron Abentheuer";
 				TargetAttributes = {
 					8021B9EA1A1166DB002FC19D = {
@@ -214,7 +213,6 @@
 				8021B9FB1A1166DB002FC19D /* LaunchScreen.xib in Resources */,
 				80259A3F1A23C16400C2CA83 /* Images.xcassets in Resources */,
 				8021BA131A11671B002FC19D /* SecondaryViewController.xib in Resources */,
-				8021BA171A11674D002FC19D /* Info.plist in Resources */,
 				8021BA151A11673C002FC19D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
